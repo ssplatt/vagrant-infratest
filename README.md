@@ -9,7 +9,7 @@ The only formula included is the [infratest-formula](https://github.com/ssplatt/
 The infratest-formula is a submodule, so make sure you clone with --recursive. Otherwise, you will need to take extra steps to pull the formula code. Once the code is cloned, you can simple use `vagrant up` to run it. Edit the files in `saltstack/pillar` as you'd like.
 
 ```bash
-git clone --recursive https://github.com/ssplatt/infratest-formula.git
+git clone --recursive https://github.com/ssplatt/vagrant-infratest.git
 vagrant up
 ```
 # Development and Testing
