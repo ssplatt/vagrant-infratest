@@ -12,6 +12,11 @@ The infratest-formula is a submodule, so make sure you clone with --recursive. O
 git clone --recursive https://github.com/ssplatt/vagrant-infratest.git
 vagrant up
 ```
+the module may not load on the first go-round, so you may need to reboot and re-highstate the machine:
+```bash
+vagrant reload --provision
+```
+
 # Development and Testing
 Ensure Vagrant is installed.
 
