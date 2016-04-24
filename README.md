@@ -1,5 +1,5 @@
 # vagrant-infratest
-Salt infratest execution module demo environment.  This is will create one virtual machine, copy over the Salt things, then highstate the virtual machine.  As a part of the highstate, the infratest module will verify the state of the machine based on the specified pillar.
+Salt [infratest execution module](https://github.com/ssplatt/saltstack-infratest-module) demo environment.  This is will create one virtual machine, copy over the Salt things, then highstate the virtual machine.  As a part of the highstate, the infratest module will verify the state of the machine based on the specified pillar.
 
 The only formula included is the [infratest-formula](https://github.com/ssplatt/infratest-formula).
 
