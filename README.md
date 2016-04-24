@@ -3,6 +3,8 @@ Salt infratest execution module demo environment.  This is will create one virtu
 
 The only formula included is the [infratest-formula](https://github.com/ssplatt/infratest-formula).
 
+[![asciicast](https://asciinema.org/a/43340.png)](https://asciinema.org/a/43340)
+
 # Usage
 The infratest-formula is a submodule, so make sure you clone with --recursive. Otherwise, you will need to take extra steps to pull the formula code. Once the code is cloned, you can simple use `vagrant up` to run it. Edit the files in `saltstack/pillar` as you'd like.
 
