@@ -24,9 +24,14 @@ infratest:
       installed: true
       version: 4.84
   process:
-    '/usr/sbin/sshd':
-      owner: root
-      count: 1
+    'nginx':
+      www-data:
+        count: 4
+      root:
+        count: 1
+    'sshd':
+      root:
+        count: 5
   service:
     'exim4':
       running: true
