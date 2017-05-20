@@ -23,6 +23,10 @@ infratest:
     'exim4':
       installed: true
       version: 4.84
+  process:
+    '/usr/sbin/sshd':
+      owner: root
+      count: 1
   service:
     'exim4':
       running: true
