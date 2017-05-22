@@ -23,6 +23,15 @@ infratest:
     'exim4':
       installed: true
       version: 4.84
+  process:
+    'nginx':
+      www-data:
+        count: 4
+      root:
+        count: 1
+    'sshd':
+      root:
+        count: 5
   service:
     'exim4':
       running: true
