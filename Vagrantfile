@@ -2,12 +2,12 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "bento/debian-8.3"
+  config.vm.box = "bento/debian-8.8"
   config.vm.hostname = 'infratestdemo.localhost.local'
   
   config.vm.provider "virtualbox" do |provider,override|
-    provider.memory = 2048
-    provider.cpus = 4
+    provider.memory = 1024
+    provider.cpus = 2
   end
 
   config.vm.provider :linode do |provider, override|

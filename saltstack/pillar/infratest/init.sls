@@ -19,19 +19,14 @@ infratest:
   package:
     'openssh-server':
       installed: true
-      version: 1:6.7p1-5+deb8u1
+      version: 1:6.7p1-5+deb8u3
     'exim4':
       installed: true
       version: 4.84
   process:
-    'nginx':
-      www-data:
-        count: 4
-      root:
-        count: 1
     'sshd':
       root:
-        count: 5
+        count: 2
   service:
     'exim4':
       running: true
@@ -45,7 +40,7 @@ infratest:
   systeminfo:
     type: linux
     distribution: debian
-    release: '8.3'
+    release: '8.8'
     codename: jessie
   sysctl:
     'kernel.osrelease':
